@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1705555114
+export_presets.cfg::TextFile::-1::1705549653::0::1::::<><>::
+index.apple-touch-icon.png::CompressedTexture2D::450538483941017937::1705549655::1705554286::1::::<><>::
+index.icon.png::CompressedTexture2D::2050710141617361366::1705549655::1705554286::1::::<><>::
+index.png::CompressedTexture2D::525009971116056486::1705549655::1705554286::1::::<><>::
+node_2d.tscn::PackedScene::2916104914785166277::1705555119::0::1::::<><>::uid://1asf7uw06e1::::res://player.tscn
+player.tscn::PackedScene::53706278885460806::1705555055::0::1::::<><>::uid://4hm5qi5h5wc1::::res://index.icon.png
+::res://scenes/::1705555114
+::res://scripts/::1705555109
+player.gd::GDScript::-1::1705555109::0::1::::<>CharacterBody2D<>::

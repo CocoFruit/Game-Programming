@@ -1,0 +1,5 @@
+res://node_2d.tscn
+res://player.tscn
+res://scenes/node_2d.tscn
+res://scenes/player.tscn
+res://scripts/player.gd
