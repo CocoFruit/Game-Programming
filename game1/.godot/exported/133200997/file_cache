@@ -1,2 +1,6 @@
-res://scenes/node_2d.tscn::2a65d383cc24ceaaa2a752454c3bec9e::1705602135::res://.godot/exported/133200997/export-7936cb3314e92baa208a95fc6f151298-node_2d.scn
-res://scenes/player.tscn::3ab1c55e4b8294aa8357b0d04784bdc2::1705602110::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/player.tscn::4f786e230ac7180a41fbab6770a2a788::1707094943::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/segments/flat1.tscn::a4480be5278a928e1bf2876f4dd38688::1705631816::res://.godot/exported/133200997/export-28a657922ac0682194ecdf808a411cee-flat1.scn
+res://scenes/background.tscn::cc53d91b5ee30e893b901cc70d516ab3::1707094943::res://.godot/exported/133200997/export-f1e46807209045e58980fb2be1ec694d-background.scn
+res://scenes/enemy.tscn::59dc845727c564d8022eef7385b68573::1707094945::res://.godot/exported/133200997/export-a930820ec0ab16db6719aff4daa500f9-enemy.scn
+res://scenes/foreground.tscn::3d306c1bdb72c2b9537a34bbb4507f77::1707094945::res://.godot/exported/133200997/export-f5f857c1721949f03335deb41022a6d5-foreground.scn
+res://scenes/world.tscn::b0c9355bd30867d2ac11ed2ef9ff667a::1707094943::res://.godot/exported/133200997/export-6b9c1b1fd6ae6f795188dfdc89e222b0-world.scn

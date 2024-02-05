@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://do0sor350dkg3"]
+
+[ext_resource type="Script" path="res://scenes/world.gd" id="1_5h77y"]
+[ext_resource type="PackedScene" uid="uid://it2fcu20rrdx" path="res://scenes/background.tscn" id="1_v6p80"]
+[ext_resource type="PackedScene" uid="uid://1asf7uw06e1" path="res://scenes/player.tscn" id="2_rtg7r"]
+[ext_resource type="PackedScene" uid="uid://bv0g7jmh4wo4j" path="res://scenes/foreground.tscn" id="3_ko38m"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_5h77y")
+
+[node name="background" parent="." instance=ExtResource("1_v6p80")]
+
+[node name="Player" parent="." instance=ExtResource("2_rtg7r")]
+position = Vector2(870, 295)
+jump_force = 800
+
+[node name="foreground" parent="." instance=ExtResource("3_ko38m")]
+position = Vector2(831, 328)
