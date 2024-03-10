@@ -132,4 +132,34 @@ position = Vector2(32, -64)
 [node name="Conveyor4" parent="." instance=ExtResource("6_3n01t")]
 position = Vector2(32, -96)
 
+[node name="miner" parent="Conveyor4" instance=ExtResource("5_o0mx7")]
+position = Vector2(301, 311)
+
+[node name="Conveyor" parent="Conveyor4" instance=ExtResource("6_3n01t")]
+position = Vector2(333, 311)
+
+[node name="furnace" parent="Conveyor4" instance=ExtResource("7_i5sks")]
+position = Vector2(333, 183)
+
+[node name="Conveyor2" parent="Conveyor4" instance=ExtResource("6_3n01t")]
+position = Vector2(333, 279)
+
+[node name="Conveyor3" parent="Conveyor4" instance=ExtResource("6_3n01t")]
+position = Vector2(333, 247)
+
+[node name="Conveyor4" parent="Conveyor4" instance=ExtResource("6_3n01t")]
+position = Vector2(333, 215)
+
+[node name="miner" parent="Conveyor4/Conveyor4" instance=ExtResource("5_o0mx7")]
+position = Vector2(-142, -191)
+
+[node name="Conveyor" parent="Conveyor4/Conveyor4" instance=ExtResource("6_3n01t")]
+position = Vector2(-110, -191)
+
+[node name="furnace" parent="Conveyor4/Conveyor4" instance=ExtResource("7_i5sks")]
+position = Vector2(-110, -255)
+
+[node name="Conveyor2" parent="Conveyor4/Conveyor4" instance=ExtResource("6_3n01t")]
+position = Vector2(-110, -223)
+
 [connection signal="gui_input" from="UI/Background" to="Camera2D" method="_on_background_gui_input"]
