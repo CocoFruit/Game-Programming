@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgqya2b2amyln"]
+
+[ext_resource type="Texture2D" uid="uid://cl41renqb80w6" path="res://grid.png" id="1_426yx"]
+[ext_resource type="Script" path="res://CubeMesh.gd" id="2_aseub"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2x167"]
+transparency = 1
+albedo_texture = ExtResource("1_426yx")
+
+[sub_resource type="BoxMesh" id="BoxMesh_1hxhr"]
+material = SubResource("StandardMaterial3D_2x167")
+size = Vector3(2, 2, 2)
+
+[node name="Cube" type="Node3D"]
+
+[node name="CubeMesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_1hxhr")
+script = ExtResource("2_aseub")

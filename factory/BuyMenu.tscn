@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4xgyy21xhs3s"]
+
+[ext_resource type="Texture2D" uid="uid://k28m0411cb7n" path="res://images/conveyor_icon.png" id="1_1ujer"]
+[ext_resource type="Script" path="res://BuyMenu.gd" id="1_t6epj"]
+
+[node name="BuyMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t6epj")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -389.0
+offset_top = -306.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Droppers" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+
+[node name="Furnaces" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Machines" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="ItemList" type="ItemList" parent="TabContainer/Machines"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -184.5
+offset_top = -130.5
+offset_right = 184.5
+offset_bottom = 130.5
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "Conveyor"
+item_count = 1
+max_columns = 4
+same_column_width = true
+icon_mode = 0
+icon_scale = 3.0
+item_0/text = "$10"
+item_0/icon = ExtResource("1_1ujer")
+
+[connection signal="item_clicked" from="TabContainer/Machines/ItemList" to="." method="_on_item_list_item_clicked"]

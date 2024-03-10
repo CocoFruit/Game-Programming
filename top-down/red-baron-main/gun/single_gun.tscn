@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://svhc0d350k7d"]
+
+[ext_resource type="PackedScene" uid="uid://63klyik6sap" path="res://gun/gun.tscn" id="1_lg3jy"]
+[ext_resource type="PackedScene" uid="uid://ql722m7x3j8k" path="res://entities/bullet.tscn" id="2_lymj3"]
+
+[node name="SingleGun" instance=ExtResource("1_lg3jy")]
+bullet_entity = ExtResource("2_lymj3")
+
+[node name="Timer" parent="." index="2"]
+wait_time = 0.3

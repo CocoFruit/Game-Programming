@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c62nctj4p4ssp"]
+
+[ext_resource type="PackedScene" uid="uid://dgqya2b2amyln" path="res://cube.tscn" id="1_shqqo"]
+[ext_resource type="Script" path="res://Camera3D.gd" id="2_2xay5"]
+[ext_resource type="AudioStream" uid="uid://jlgx7mbn88hc" path="res://Lipps, Inc. - Funky Town (minus).mp3" id="3_wvxdr"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Cube" parent="." instance=ExtResource("1_shqqo")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.43939)
+script = ExtResource("2_2xay5")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Camera3D"]
+light_energy = 9.084
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_wvxdr")

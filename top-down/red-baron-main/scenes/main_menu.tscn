@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcng8uhpiyadn"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_88xt7"]
+[ext_resource type="Theme" path="res://assets/primary_theme.tres" id="1_gx2p0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ehqun"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("1_gx2p0")
+script = ExtResource("1_88xt7")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_right = 368.0
+offset_bottom = 640.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Red Baron"
+horizontal_alignment = 1
+
+[node name="StartLabel" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Press \"Space\" to start"
+label_settings = SubResource("LabelSettings_ehqun")
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+
+[node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "Play"
+metadata/_edit_use_anchors_ = true
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+text = "Quit"
+metadata/_edit_use_anchors_ = true

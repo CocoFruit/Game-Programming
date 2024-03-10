@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://bqnjvohunfgsl"]
+
+[ext_resource type="Texture2D" uid="uid://bp1kvq6qgcgxu" path="res://assets/bullet/Retro Impact Effect Pack 2 B.png" id="1_sopfm"]
+[ext_resource type="Script" path="res://components/onetime_animated_effect.gd" id="6_4dglm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x2sfo"]
+atlas = ExtResource("1_sopfm")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4iwn"]
+atlas = ExtResource("1_sopfm")
+region = Rect2(64, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4csb"]
+atlas = ExtResource("1_sopfm")
+region = Rect2(128, 192, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bknrt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x2sfo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4iwn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4csb")
+}],
+"loop": false,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="OnetimeAnimatedEffect" type="AnimatedSprite2D"]
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_bknrt")
+autoplay = "default"
+frame = 2
+frame_progress = 1.0
+script = ExtResource("6_4dglm")

@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0gp0lnm6pcub"]
+
+[ext_resource type="Texture2D" uid="uid://cpid0oi4efi8g" path="res://images/pixil-frame-0.png" id="1_dmgn6"]
+[ext_resource type="Script" path="res://miner.gd" id="1_lnury"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ysj84"]
+size = Vector2(32, 32)
+
+[node name="miner" type="Node2D"]
+script = ExtResource("1_lnury")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="SpawnTimer" type="Timer" parent="Area2D"]
+process_callback = 0
+wait_time = 2.0
+one_shot = true
+
+[node name="Object" type="Sprite2D" parent="Area2D"]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("1_dmgn6")
+
+[node name="Button" type="Button" parent="Area2D"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+pivot_offset = Vector2(397, 80)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ysj84")
+
+[connection signal="button_down" from="Area2D/Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Area2D/Button" to="." method="_on_button_button_up"]

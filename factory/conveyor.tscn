@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://fx0hsqrx7y5q"]
+
+[ext_resource type="Texture2D" uid="uid://dac5jmc25pxyj" path="res://images/conveyor_sprite.png" id="1_ctoqo"]
+[ext_resource type="Script" path="res://Conv Area.gd" id="2_dppw4"]
+[ext_resource type="Script" path="res://conveyor_sprite_script.gd" id="2_fewx3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bly27"]
+atlas = ExtResource("1_ctoqo")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8glkl"]
+atlas = ExtResource("1_ctoqo")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aw8ue"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bly27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8glkl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pywtx"]
+size = Vector2(32, 32)
+
+[node name="Conveyor" type="Node2D"]
+
+[node name="Conv Area" type="Area2D" parent="." groups=["Conveyor"]]
+script = ExtResource("2_dppw4")
+
+[node name="conveyor_sprite" type="AnimatedSprite2D" parent="Conv Area"]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_aw8ue")
+frame_progress = 0.677744
+script = ExtResource("2_fewx3")
+
+[node name="Button" type="Button" parent="Conv Area/conveyor_sprite"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Conv Area"]
+shape = SubResource("RectangleShape2D_pywtx")
+
+[connection signal="area_entered" from="Conv Area" to="." method="_on_conv_area_area_entered"]

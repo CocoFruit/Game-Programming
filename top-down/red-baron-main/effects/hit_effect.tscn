@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://1l7825jc3oih"]
+
+[ext_resource type="Texture2D" uid="uid://bp1kvq6qgcgxu" path="res://assets/bullet/Retro Impact Effect Pack 2 B.png" id="1_otwti"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhp6a"]
+atlas = ExtResource("1_otwti")
+region = Rect2(320, 134, 64, 67)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulj0p"]
+atlas = ExtResource("1_otwti")
+region = Rect2(384, 134, 64, 67)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b6rkh"]
+atlas = ExtResource("1_otwti")
+region = Rect2(448, 134, 64, 67)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r24f4"]
+atlas = ExtResource("1_otwti")
+region = Rect2(512, 134, 64, 67)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqimq"]
+atlas = ExtResource("1_otwti")
+region = Rect2(576, 134, 64, 67)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_14d7q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhp6a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulj0p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6rkh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r24f4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqimq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 11.0
+}]
+
+[node name="Hit_Animation" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_14d7q")
+frame_progress = 0.521995

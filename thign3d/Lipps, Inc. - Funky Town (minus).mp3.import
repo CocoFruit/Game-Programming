@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jlgx7mbn88hc"
+path="res://.godot/imported/Lipps, Inc. - Funky Town (minus).mp3-e7a38eea773e332d0e30e5a075a3513d.mp3str"
+
+[deps]
+
+source_file="res://Lipps, Inc. - Funky Town (minus).mp3"
+dest_files=["res://.godot/imported/Lipps, Inc. - Funky Town (minus).mp3-e7a38eea773e332d0e30e5a075a3513d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

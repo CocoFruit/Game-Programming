@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://dnk7psxe7jjfw"]
+
+[ext_resource type="Texture2D" uid="uid://dac5jmc25pxyj" path="res://images/conveyor_sprite.png" id="1_vtnet"]
+[ext_resource type="Script" path="res://fake_conveyor.gd" id="2_qo0yf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bly27"]
+atlas = ExtResource("1_vtnet")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8glkl"]
+atlas = ExtResource("1_vtnet")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e1wmg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bly27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8glkl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="fake_conveyor" type="AnimatedSprite2D"]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_e1wmg")
+script = ExtResource("2_qo0yf")
