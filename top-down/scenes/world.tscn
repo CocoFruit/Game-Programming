@@ -5,7 +5,7 @@
 [ext_resource type="Resource" uid="uid://ci0fm6040mf8s" path="res://game_stats.tres" id="2_4k8r6"]
 [ext_resource type="PackedScene" uid="uid://lo123csfhdge" path="res://entities/player.tscn" id="2_yxot0"]
 [ext_resource type="PackedScene" uid="uid://ddeb3qx5uj4ar" path="res://enemies/enemy_spawner.tscn" id="4_tbwfs"]
-[ext_resource type="Theme" path="res://assets/primary_theme.tres" id="6_lbrn6"]
+[ext_resource type="Theme" uid="uid://bocl36mt2a4bf" path="res://assets/bullet/primary_theme.tres" id="6_lbrn6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1s4ng"]
 texture = ExtResource("1_vsa4y")
