@@ -12,7 +12,7 @@ var start_pos : Vector2
 
 
 var default_cursor = preload("res://images/mouse.png")
-var moving_cursor = preload("res://images/moving_mose.png")
+#var moving_cursor = preload("res://images/moving_mose.png")
 var select_cursor = preload("res://images/selected_mouse.png")
 
 # Called when the node enters the scene tree for the first time.

@@ -1,7 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://d1gl0maitkav5"]
+[gd_scene load_steps=10 format=3 uid="uid://d1gl0maitkav5"]
 
 [ext_resource type="Script" path="res://Camera2D.gd" id="3_xiygf"]
 [ext_resource type="PackedScene" uid="uid://1643jrchd2ur" path="res://ui.tscn" id="4_2w4at"]
+[ext_resource type="PackedScene" uid="uid://b0gp0lnm6pcub" path="res://miner.tscn" id="5_o0mx7"]
+[ext_resource type="PackedScene" uid="uid://fx0hsqrx7y5q" path="res://conveyor.tscn" id="6_3n01t"]
+[ext_resource type="PackedScene" uid="uid://bsbkeu5cg7l0f" path="res://furnace.tscn" id="7_i5sks"]
 [ext_resource type="Texture2D" uid="uid://bipe84k2adgcw" path="res://images/tileset_complet.png" id="7_l2mwq"]
 [ext_resource type="Script" path="res://Background.gd" id="7_uq8pp"]
 
@@ -111,5 +114,22 @@ script = ExtResource("7_uq8pp")
 [node name="TileMap" type="TileMap" parent="UI/Background"]
 tile_set = SubResource("TileSet_aydtt")
 format = 2
+
+[node name="miner" parent="." instance=ExtResource("5_o0mx7")]
+
+[node name="Conveyor" parent="." instance=ExtResource("6_3n01t")]
+position = Vector2(32, 0)
+
+[node name="furnace" parent="." instance=ExtResource("7_i5sks")]
+position = Vector2(32, -128)
+
+[node name="Conveyor2" parent="." instance=ExtResource("6_3n01t")]
+position = Vector2(32, -32)
+
+[node name="Conveyor3" parent="." instance=ExtResource("6_3n01t")]
+position = Vector2(32, -64)
+
+[node name="Conveyor4" parent="." instance=ExtResource("6_3n01t")]
+position = Vector2(32, -96)
 
 [connection signal="gui_input" from="UI/Background" to="Camera2D" method="_on_background_gui_input"]
