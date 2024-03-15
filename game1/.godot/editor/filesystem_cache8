@@ -1,52 +1,52 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710048637
-Dragon_sprite_sheet_noback.png::CompressedTexture2D::4966267764221370227::1706815383::1706815399::1::::<><>::
-export_presets.cfg::TextFile::-1::1705549653::0::1::::<><>::
-foreground.gd::GDScript::-1::1705630505::0::1::::<>Node2D<>::
-index.apple-touch-icon.png::CompressedTexture2D::450538483941017937::1707096895::1705554286::1::::<><>::
-index.icon.png::CompressedTexture2D::2050710141617361366::1707096895::1705554286::1::::<><>::
-index.png::CompressedTexture2D::525009971116056486::1707096895::1705554286::1::::<><>::
-main_lev_build.png::CompressedTexture2D::7427298746541143541::1705632647::1705632843::1::::<><>::
-other_and_decorative.png::CompressedTexture2D::1116850427268931584::1705632647::1705632843::1::::<><>::
-public-license.txt::TextFile::-1::1705632647::0::1::::<><>::
-::res://cave/::1705633188
-CaveTileExample.png::CompressedTexture2D::7294595577136874980::1705633150::1705633188::1::::<><>::
-CaveTileset.png::CompressedTexture2D::6407972751806840905::1705633150::1705633188::1::::<><>::
-::res://Martial Hero/::1705609693
-License.txt::TextFile::-1::1705609693::0::1::::<><>::
-::res://Martial Hero/Sprites/::1705609703
-Attack1.png::CompressedTexture2D::6080077604449998067::1705609693::1705609703::1::::<><>::
-Attack2.png::CompressedTexture2D::9065761776684507483::1705609693::1705609703::1::::<><>::
-Death.png::CompressedTexture2D::5680786292533078508::1705609693::1705609703::1::::<><>::
-Fall.png::CompressedTexture2D::2966832852679292357::1705609693::1705609703::1::::<><>::
-Idle.png::CompressedTexture2D::4592849155448564260::1705609693::1705609703::1::::<><>::
-Jump.png::CompressedTexture2D::5055534827225658391::1705609693::1705609703::1::::<><>::
-Run.png::CompressedTexture2D::736387351455126008::1705609693::1705609703::1::::<><>::
-Take Hit - white silhouette.png::CompressedTexture2D::7256864531220304253::1705609693::1705609703::1::::<><>::
-Take Hit.png::CompressedTexture2D::5313194106412029479::1705609693::1705609703::1::::<><>::
-::res://scenes/::1707094945
-background.tscn::PackedScene::602382351409255225::1707094943::0::1::::<><>::uid://b6vp52k3sxpc1::::res://Sunset/Background.png<>uid://cifvyckbx18td::::res://Sunset/1.png<>uid://dr5rp4if70wom::::res://Sunset/2.png<>uid://cfyos0vbsk31e::::res://Sunset/3.png<>uid://bm6pgeyd1g1ts::::res://Sunset/4.png<>uid://b2nhhkk1jebds::::res://Sunset/5.png<>uid://cas6brnt8fx1d::::res://Sunset/6.png<>uid://dbqo13glc7ypq::::res://Sunset/7.png<>uid://41lvkhind1vp::::res://Sunset/8.png<>uid://dpkyjpmhytb6q::::res://Sunset/bottomground.png
-Camera2D.gd::GDScript::-1::1705627418::0::1::::<>RefCounted<>::
-enemy.gd::GDScript::-1::1706827406::0::1::::<>RigidBody2D<>::
-enemy.tscn::PackedScene::3271077792407507705::1707094945::0::1::::<><>::uid://cc0xx7nrjb7dv::::res://Dragon_sprite_sheet_noback.png<>res://scenes/enemy.gd
-foreground.tscn::PackedScene::3912417782910318843::1707094945::0::1::::<><>::uid://cxkcm0rhwayv6::::res://cave/CaveTileset.png<>uid://dd23r4e833w0l::::res://main_lev_build.png<>uid://p6ammbvmn681::::res://other_and_decorative.png
-player.tscn::PackedScene::53706278885460806::1707094943::0::1::::<><>::res://scripts/player.gd<>uid://csvh8wip6qfap::::res://Martial Hero/Sprites/Attack1.png<>uid://b6o2s4cxjviky::::res://Martial Hero/Sprites/Idle.png<>uid://bijfkk8vtxx2l::::res://Martial Hero/Sprites/Fall.png<>uid://kqygsb7ay7lc::::res://Martial Hero/Sprites/Run.png<>uid://d2fr1imibfdax::::res://Martial Hero/Sprites/Attack2.png<>uid://cea66jq7ovvut::::res://Martial Hero/Sprites/Jump.png
-world.gd::GDScript::-1::1706040320::0::1::::<>Node2D<>::
-world.tscn::PackedScene::8194634150395792760::1707094943::0::1::::<><>::res://scenes/world.gd<>uid://it2fcu20rrdx::::res://scenes/background.tscn<>uid://1asf7uw06e1::::res://scenes/player.tscn<>uid://bv0g7jmh4wo4j::::res://scenes/foreground.tscn
-::res://scenes/segments/::1705631816
-flat1.tscn::PackedScene::9210274854715389118::1705631816::0::1::::<><>::
-::res://scripts/::1706040133
-player.gd::GDScript::-1::1706040133::0::1::::<>CharacterBody2D<>::
-::res://Sunset/::1705628804
-1.png::CompressedTexture2D::5345992041734549613::1705625885::1705625906::1::::<><>::
-2.png::CompressedTexture2D::8415464237139788200::1705625885::1705625906::1::::<><>::
-3.png::CompressedTexture2D::5174214179457379384::1705625885::1705625906::1::::<><>::
-4.png::CompressedTexture2D::3293604234720293168::1705625885::1705625906::1::::<><>::
-5.png::CompressedTexture2D::4308794434104504172::1705625885::1705625906::1::::<><>::
-6.png::CompressedTexture2D::4811885093415949355::1705625885::1705625906::1::::<><>::
-7.png::CompressedTexture2D::7263378887748928622::1705625885::1705625906::1::::<><>::
-8.png::CompressedTexture2D::2089856212129064041::1705625885::1705625906::1::::<><>::
-Background.png::CompressedTexture2D::4606592532891669490::1705625885::1705625906::1::::<><>::
-bottomground.png::CompressedTexture2D::8234212569900700074::1705628800::1705628804::1::::<><>::
-expanded.png::CompressedTexture2D::5811789765134243633::1705625885::1705625907::1::::<><>::
-Foreground.png::CompressedTexture2D::8565289982320968796::1705625885::1705625906::1::::<><>::
+::res://::1710467678
+Dragon_sprite_sheet_noback.png::CompressedTexture2D::4966267764221370227::1706818983::1706818999::1::::<><>::
+export_presets.cfg::TextFile::-1::1705553253::0::1::::<><>::
+foreground.gd::GDScript::-1::1705634105::0::1::::<>Node2D<>::
+index.apple-touch-icon.png::CompressedTexture2D::450538483941017937::1707100495::1705557886::1::::<><>::
+index.icon.png::CompressedTexture2D::2050710141617361366::1707100495::1705557886::1::::<><>::
+index.png::CompressedTexture2D::525009971116056486::1707100495::1705557886::1::::<><>::
+main_lev_build.png::CompressedTexture2D::7427298746541143541::1705636247::1705636443::1::::<><>::
+other_and_decorative.png::CompressedTexture2D::1116850427268931584::1705636247::1705636443::1::::<><>::
+public-license.txt::TextFile::-1::1705636247::0::1::::<><>::
+::res://cave/::1705636788
+CaveTileExample.png::CompressedTexture2D::7294595577136874980::1705636750::1705636788::1::::<><>::
+CaveTileset.png::CompressedTexture2D::6407972751806840905::1705636750::1705636788::1::::<><>::
+::res://Martial Hero/::1705613293
+License.txt::TextFile::-1::1705613293::0::1::::<><>::
+::res://Martial Hero/Sprites/::1705613303
+Attack1.png::CompressedTexture2D::6080077604449998067::1705613293::1705613303::1::::<><>::
+Attack2.png::CompressedTexture2D::9065761776684507483::1705613293::1705613303::1::::<><>::
+Death.png::CompressedTexture2D::5680786292533078508::1705613293::1705613303::1::::<><>::
+Fall.png::CompressedTexture2D::2966832852679292357::1705613293::1705613303::1::::<><>::
+Idle.png::CompressedTexture2D::4592849155448564260::1705613293::1705613303::1::::<><>::
+Jump.png::CompressedTexture2D::5055534827225658391::1705613293::1705613303::1::::<><>::
+Run.png::CompressedTexture2D::736387351455126008::1705613293::1705613303::1::::<><>::
+Take Hit - white silhouette.png::CompressedTexture2D::7256864531220304253::1705613293::1705613303::1::::<><>::
+Take Hit.png::CompressedTexture2D::5313194106412029479::1705613293::1705613303::1::::<><>::
+::res://scenes/::1707098545
+background.tscn::PackedScene::602382351409255225::1707098543::0::1::::<><>::uid://b6vp52k3sxpc1::::res://Sunset/Background.png<>uid://cifvyckbx18td::::res://Sunset/1.png<>uid://dr5rp4if70wom::::res://Sunset/2.png<>uid://cfyos0vbsk31e::::res://Sunset/3.png<>uid://bm6pgeyd1g1ts::::res://Sunset/4.png<>uid://b2nhhkk1jebds::::res://Sunset/5.png<>uid://cas6brnt8fx1d::::res://Sunset/6.png<>uid://dbqo13glc7ypq::::res://Sunset/7.png<>uid://41lvkhind1vp::::res://Sunset/8.png<>uid://dpkyjpmhytb6q::::res://Sunset/bottomground.png
+Camera2D.gd::GDScript::-1::1705631018::0::1::::<>RefCounted<>::
+enemy.gd::GDScript::-1::1706831006::0::1::::<>RigidBody2D<>::
+enemy.tscn::PackedScene::3271077792407507705::1707098545::0::1::::<><>::uid://cc0xx7nrjb7dv::::res://Dragon_sprite_sheet_noback.png<>res://scenes/enemy.gd
+foreground.tscn::PackedScene::3912417782910318843::1707098545::0::1::::<><>::uid://cxkcm0rhwayv6::::res://cave/CaveTileset.png<>uid://dd23r4e833w0l::::res://main_lev_build.png<>uid://p6ammbvmn681::::res://other_and_decorative.png
+player.tscn::PackedScene::53706278885460806::1707098543::0::1::::<><>::res://scripts/player.gd<>uid://csvh8wip6qfap::::res://Martial Hero/Sprites/Attack1.png<>uid://b6o2s4cxjviky::::res://Martial Hero/Sprites/Idle.png<>uid://bijfkk8vtxx2l::::res://Martial Hero/Sprites/Fall.png<>uid://kqygsb7ay7lc::::res://Martial Hero/Sprites/Run.png<>uid://d2fr1imibfdax::::res://Martial Hero/Sprites/Attack2.png<>uid://cea66jq7ovvut::::res://Martial Hero/Sprites/Jump.png
+world.gd::GDScript::-1::1706043920::0::1::::<>Node2D<>::
+world.tscn::PackedScene::8194634150395792760::1707098543::0::1::::<><>::res://scenes/world.gd<>uid://it2fcu20rrdx::::res://scenes/background.tscn<>uid://1asf7uw06e1::::res://scenes/player.tscn<>uid://bv0g7jmh4wo4j::::res://scenes/foreground.tscn
+::res://scenes/segments/::1705635416
+flat1.tscn::PackedScene::9210274854715389118::1705635416::0::1::::<><>::
+::res://scripts/::1706043733
+player.gd::GDScript::-1::1706043733::0::1::::<>CharacterBody2D<>::
+::res://Sunset/::1705632404
+1.png::CompressedTexture2D::5345992041734549613::1705629485::1705629506::1::::<><>::
+2.png::CompressedTexture2D::8415464237139788200::1705629485::1705629506::1::::<><>::
+3.png::CompressedTexture2D::5174214179457379384::1705629485::1705629506::1::::<><>::
+4.png::CompressedTexture2D::3293604234720293168::1705629485::1705629506::1::::<><>::
+5.png::CompressedTexture2D::4308794434104504172::1705629485::1705629506::1::::<><>::
+6.png::CompressedTexture2D::4811885093415949355::1705629485::1705629506::1::::<><>::
+7.png::CompressedTexture2D::7263378887748928622::1705629485::1705629506::1::::<><>::
+8.png::CompressedTexture2D::2089856212129064041::1705629485::1705629506::1::::<><>::
+Background.png::CompressedTexture2D::4606592532891669490::1705629485::1705629506::1::::<><>::
+bottomground.png::CompressedTexture2D::8234212569900700074::1705632400::1705632404::1::::<><>::
+expanded.png::CompressedTexture2D::5811789765134243633::1705629485::1705629507::1::::<><>::
+Foreground.png::CompressedTexture2D::8565289982320968796::1705629485::1705629506::1::::<><>::
